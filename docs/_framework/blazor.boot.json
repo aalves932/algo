@@ -1,7 +1,7 @@
 {
-  "mainAssemblyName": "Algoritmos",
+  "mainAssemblyName": "algoritmos",
   "resources": {
-    "hash": "sha256-VuKV2WvkvJXjW11a6N7o58197LyDFRFUGDetdy9oaN0=",
+    "hash": "sha256-6cErYCXqK4yuwVH48t1yNLss/iL09QBSyZz71BV4Guc=",
     "jsModuleNative": {
       "dotnet.native.8.0.1.mojvzh2350.js": "sha256-SGOlISx+3G4kkvpC9Uq3qoPGsnjxGmW61QBev0lyI5U="
     },
@@ -17,7 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "Algoritmos.wasm": "sha256-oQqfntEJTlLcpb84cFCJ9TPCuRlleghjxFXW/ojSnqY=",
+      "algoritmos.wasm": "sha256-74wjf0zY/OzwxAbji594Pxa2LF53t4WJWNBr1mU8qKI=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-FH2Qq1tZ5w5cA8ZReH0/rL2GxaIjA5uDOA6g4+RcHmY=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-mmo6S4AxiBcnKbs4b+7ObftqPCkIcLGiAv9gICT/5NY=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-d6tN87QrJstiTMcLaUtZ6TWiNHa8A74Suuzx95thRrE=",
@@ -42,10 +42,10 @@
       "System.Net.Http.Json.wasm": "sha256-RiL/9B8k0iwXekhcF8cmPEAuBSLCrqkTGdH3vvf672Y=",
       "System.Net.Http.wasm": "sha256-ML6zktk3HF5G2puG57fIsz+UbmlOAw+K8W+yok6BC28=",
       "System.Net.Primitives.wasm": "sha256-nF9fk722J9hXgRTF4PmISiSuCglcT8FA8U0NrFaluAg=",
-      "System.Private.CoreLib.wasm": "sha256-WipSttCn4k/FunDNEIdt5uDkKcj6K1bMFFTLJbhgH1g=",
+      "System.Private.CoreLib.wasm": "sha256-jF7U+zH3YLpyI4GPlWclT6ZTf0ZTzq2Gzlx3iY1zs20=",
       "System.Private.Uri.wasm": "sha256-UIgH6XXlW416DoZzHLoHEo5+sAVPJBT6C4RnuVKMuMo=",
       "System.Runtime.InteropServices.JavaScript.wasm": "sha256-wIi66aTOmhZVzepyAzcEdbo2ANdpeESii99H6LjInq0=",
-      "System.Runtime.wasm": "sha256-4GGXf5r/p03XGxo/OUOsgjPH383FiU/+Y3JcW4JqmKU=",
+      "System.Runtime.wasm": "sha256-r7Ga3c0i48ntMuVImHprfeb3FiJOcqTWy0swTN4+06k=",
       "System.Text.Encodings.Web.wasm": "sha256-+xy+tOrpZQfQay41WvWhFxGHmHiYCwxIZC0u0YeG8MY=",
       "System.Text.Json.wasm": "sha256-3+CtWg+4SO1T+15o1W5mTBoxvMzlPRN8VPA3AvcZBXM=",
       "System.Text.RegularExpressions.wasm": "sha256-gBOmDgKZBuDoGsHbhJq/ngBU9uslj8K/+ZuZekYrq54="
