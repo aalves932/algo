@@ -2,13 +2,13 @@
 
 <PageTitle>Hebilitação</PageTitle>
 <h3>Departamento de Transito</h3>
-<h6>Você está apto a dirigir?</h6>
+<h5>Você está apto a dirigir?</h5>
 
 <div class="container-fluid ">
     <div class="row">
-        <div class="mt-4">
+        <div class="col-8 mt-4">
             <label class="form-label">Data de Nascimento</label>
-            <input type="date" class="form-text form-control-sm" style="width: 120px; height: 25px;" 
+            <input type="date" class="form-text form-control-sm" style="width: 130px; height: 28px;" 
                    @bind="dataNascimento"
                    @bind:event="oninput">
             <button class="btn btn-primary btn-sm " @onclick="VerificaAptidao">Verificar</button>
