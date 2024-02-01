@@ -4,37 +4,49 @@
 
 
 
-<div class="form-group row mt-4 pt-3 pb-5 rounded bg-gradient-calc">
+<div class="form-group row mt-4 pt-3 pb-5 rounded bg-gradient-calc itens-center">
     <h5 class="mt-4">Conversão de medidas informáticas</h5>
 
     <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
         <div><label for="inputValue1">bit (B)</label></div>
-        <input type="number" name="inputValue1" class="form-control input-lg text-center" placeholder="bit">
+        <input @bind="bitValue" type="number" name="inputValue1" class="form-control input-lg text-center"
+            placeholder="bit">
     </div>
 
     <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
         <div><label for="inputValue2">byte (B)</label></div>
-        <input type="number" name="inputValue2" class="form-control input-lg text-center" placeholder="byte">
+        <input @bind="byteValue" type="number" name="inputValue2" class="form-control input-lg text-center"
+            placeholder="byte">
     </div>
 
     <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
         <div><label for="inputValue3">kilobyte (KB)</label></div>
-        <input type="number" name="inputValue3" class="form-control input-lg text-center" placeholder="KB">
+        <input @bind="kilobyteValue" type="number" name="inputValue3" class="form-control input-lg text-center"
+            placeholder="KB">
     </div>
 
     <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
         <div><label for="inputValue4">megabyte (MB)</label></div>
-        <input type="number" name="inputValue4" class="form-control input-lg text-center" placeholder="MB">
+        <input @bind="megabyteValue" type="number" name="inputValue4" class="form-control input-lg text-center"
+            placeholder="MB">
     </div>
 
     <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
         <div><label for="inputValue5">gigabyte (GB)</label></div>
-        <input type="number" name="inputValue5" class="form-control input-lg text-center" placeholder="GB">
+        <input @bind="gigabyteValue" type="number" name="inputValue5" class="form-control input-lg text-center"
+            placeholder="GB">
     </div>
 
     <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
         <div><label for="inputValue6">terabyte (TB)</label></div>
-        <input type="number" name="inputValue6" class="form-control input-lg text-center" placeholder="TB">
+        <input @bind="terabyteValue" type="number" name="inputValue6" class="form-control input-lg text-center"
+            placeholder="TB">
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-4 mt-5 text-center">
+            <button class="btn btn-primary m-auto" @onclick="calculate">Calcular</button>
+        </div>
     </div>
 </div>
 
@@ -252,5 +264,19 @@
 
 
 @code {
+    public double bitValue = 0;
+    public double byteValue = 0;
+    public double kilobyteValue = 0;
+    public double megabyteValue = 0;
+    public double gigabyteValue = 0;
+    public double terabyteValue = 0;
 
+    public void calculate()
+    {
+        bitValue = byteValue * 8;
+        kilobyteValue = byteValue / 1024;
+        megabyteValue = kilobyteValue / 1024;
+        gigabyteValue = megabyteValue / 1024;
+        terabyteValue = gigabyteValue / 1024;
+    }
 }
