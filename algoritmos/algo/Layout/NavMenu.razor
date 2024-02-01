@@ -17,27 +17,14 @@
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="habilitacao">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-credit-card-2-front" viewBox="0 0 16 16"> <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" /><path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5" />
+                    class="bi bi-credit-card-2-front" viewBox="0 0 16 16">
+                    <path
+                        d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" />
+                    <path
+                        d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5" />
                 </svg>Habilitação
             </NavLink>
         </div>
-        <!-- Submenu Financeiro começa aqui -->
-        <div class="nav-item px-3">
-            <a class="nav-link" href="" @onclick="ToggleFinanceiroMenu">
-                <span class="bi bi-currency-dollar-nav-menu" aria-hidden="true"></span> Financeiro
-            </a>
-            <div class="@FinanceiroMenuCssClass">
-                <nav class="nav flex-column ms-3">
-                    <NavLink class="nav-link" href="contas-a-pagar">
-                        <span class="bi bi-caret-right-square-fill" aria-hidden="true"></span> Contas a Pagar
-                    </NavLink>
-                    <NavLink class="nav-link" href="contas-a-receber">
-                        <span class="bi bi-caret-right-square-fill" aria-hidden="true"></span> Contas a Receber
-                    </NavLink>
-                </nav>
-            </div>
-        </div>
-        <!-- Submenu Financeiro termina aqui -->
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="counter">
                 <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
@@ -53,18 +40,11 @@
 
 @code {
     private bool collapseNavMenu = true;
-    private bool collapseFinanceiroMenu = true; // Estado para o submenu Financeiro
 
     private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-    private string? FinanceiroMenuCssClass => collapseFinanceiroMenu ? "collapse" : null; // CSS para o submenu Financeiro
 
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
-    }
-
-    private void ToggleFinanceiroMenu() // Método para alternar a visibilidade do submenu Financeiro
-    {
-        collapseFinanceiroMenu = !collapseFinanceiroMenu;
     }
 }
