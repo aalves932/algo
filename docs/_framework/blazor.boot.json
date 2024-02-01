@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "algo",
   "resources": {
-    "hash": "sha256-LRwdJQtXn6ytkcHfz/3TwqIQRkns04Otz6rI8m0OXCw=",
+    "hash": "sha256-1YCjvJYmGeFgk+uEtfDyaTm7jPTasTOdAoubKkw2cTk=",
     "jsModuleNative": {
       "dotnet.native.8.0.1.116zay1b8o.js": "sha256-U3DDnyef6FaENP7eEENBJnl7qVe/jrGECjCx+aVDn8Q="
     },
@@ -17,7 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "algo.wasm": "sha256-3GioA5s1A7NhFaVOPYQJQKZFjhHIS96Vd5Cp+jXncls=",
+      "algo.wasm": "sha256-frcAa5Oc1Gz1TllLc3aF7c+y0m30sqanDFpBiAohieg=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-qFB+hboG4kHkWaGtvA9jSGZIHB7nF6cm11C9v1/R/9I=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-mmo6S4AxiBcnKbs4b+7ObftqPCkIcLGiAv9gICT/5NY=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-d6tN87QrJstiTMcLaUtZ6TWiNHa8A74Suuzx95thRrE=",
