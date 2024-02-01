@@ -2,7 +2,43 @@
 
 <h3>Calculadora de Bytes</h3>
 
-<h5 class="mt-4">Conversão de de medidas informáticas</h5>
+
+
+<div class="form-group row mt-4 pt-3 pb-5 rounded bg-gradient-calc">
+    <h5 class="mt-4">Conversão de medidas informáticas</h5>
+
+    <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
+        <div><label for="inputValue1">bit (B)</label></div>
+        <input type="number" name="inputValue1" class="form-control input-lg text-center" placeholder="bit">
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
+        <div><label for="inputValue2">byte (B)</label></div>
+        <input type="number" name="inputValue2" class="form-control input-lg text-center" placeholder="byte">
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
+        <div><label for="inputValue3">kilobyte (KB)</label></div>
+        <input type="number" name="inputValue3" class="form-control input-lg text-center" placeholder="KB">
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
+        <div><label for="inputValue4">megabyte (MB)</label></div>
+        <input type="number" name="inputValue4" class="form-control input-lg text-center" placeholder="MB">
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
+        <div><label for="inputValue5">gigabyte (GB)</label></div>
+        <input type="number" name="inputValue5" class="form-control input-lg text-center" placeholder="GB">
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
+        <div><label for="inputValue6">terabyte (TB)</label></div>
+        <input type="number" name="inputValue6" class="form-control input-lg text-center" placeholder="TB">
+    </div>
+</div>
+
+
 
 <div class="container-fluid mt-4 m-auto w-auto">
     <h5>Quantos megabytes (MB) é um gigabyte (GB)? E um terabyte (TB)?</h5>
@@ -10,129 +46,88 @@
     muito fácil de passar dados de megabytes a gigabytes, ou kilobytes a terabytes.
 
     <div class="mt-4">
-        <table class="table">
+        <table class="table table-responsive">
             <tbody>
                 <tr>
                     <td><b>Nome</b></td>
                     <td><b>Símbolo</b></td>
-                    <td colspan="4"></td>
-                    <td colspan="4"><strong>Equivalência</strong></td>
+                    <td colspan="5"><strong>Equivalência</strong></td>
                 </tr>
                 <tr>
                     <td>bit</td>
                     <td>b</td>
-                    <td></td>
-                    <td></td>
-                    <td width="27"></td>
-                    <td></td>
                     <td>1</td>
                     <td>bit</td>
-                    <td width="24">=</td>
-                    <td>1 bit</td>
+                    <td>=</td>
+                    <td colspan="2">1 bit</td>
                 </tr>
                 <tr>
                     <td>byte</td>
                     <td>B</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>B</td>
                     <td>=</td>
-                    <td>8 bit</td>
+                    <td colspan="2">8 bit</td>
                 </tr>
                 <tr>
                     <td>kilobit</td>
                     <td>kbit / kb</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>kBit</td>
                     <td>=</td>
-                    <td>1000 bit</td>
+                    <td colspan="2">1000 bit</td>
                 </tr>
                 <tr>
                     <td>Kibibit</td>
                     <td>KiBit</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>KiBit</td>
                     <td>=</td>
-                    <td>1024 bit</td>
+                    <td colspan="2">1024 bit</td>
                 </tr>
                 <tr>
                     <td>kilobyte</td>
                     <td>kB</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>kB</td>
                     <td>=</td>
-                    <td>1000 Byte</td>
+                    <td colspan="2">1000 Byte</td>
                 </tr>
                 <tr>
                     <td>kibibyte</td>
                     <td>KiB</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>KiB</td>
                     <td>=</td>
-                    <td>1024 Byte</td>
+                    <td colspan="2">1024 Byte</td>
                 </tr>
                 <tr>
                     <td>megabit</td>
                     <td>MBit / Mb</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>MBit</td>
                     <td>=</td>
-                    <td>1000 kBit</td>
+                    <td colspan="2">1000 kBit</td>
                 </tr>
                 <tr>
                     <td>mebibit</td>
                     <td>MiBit / Mib</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>Mib</td>
                     <td>=</td>
-                    <td>1024 KiBit</td>
+                    <td colspan="2">1024 KiBit</td>
                 </tr>
                 <tr>
                     <td>megabyte</td>
                     <td>MB</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>MB</td>
                     <td>=</td>
-                    <td>1000 kB</td>
+                    <td colspan="2">1000 kB</td>
                 </tr>
                 <tr>
                     <td>Mebibyte</td>
                     <td>MiBit / MiB</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>MiB</td>
                     <td>=</td>
@@ -141,10 +136,6 @@
                 <tr>
                     <td>gigabit</td>
                     <td>GBit /<label>Gb</label></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>GBit</td>
                     <td>=</td>
@@ -153,10 +144,6 @@
                 <tr>
                     <td>gibibit</td>
                     <td>GiBit / Gib</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>Gib</td>
                     <td>=</td>
@@ -165,10 +152,6 @@
                 <tr>
                     <td>gigabyte</td>
                     <td>GB</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>GB</td>
                     <td>=</td>
@@ -177,10 +160,6 @@
                 <tr>
                     <td>gibibyte</td>
                     <td>GiB</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>GiB</td>
                     <td>=</td>
@@ -189,10 +168,6 @@
                 <tr>
                     <td>terabyte</td>
                     <td>TB</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>TB</td>
                     <td>=</td>
@@ -201,10 +176,6 @@
                 <tr>
                     <td>tebibyte</td>
                     <td>TiB</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>TiB</td>
                     <td>=</td>
@@ -213,10 +184,6 @@
                 <tr>
                     <td>petabyte</td>
                     <td>PB</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>PB</td>
                     <td>=</td>
@@ -225,10 +192,6 @@
                 <tr>
                     <td>pebibyte</td>
                     <td>PiB</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>PiB</td>
                     <td>=</td>
@@ -237,10 +200,6 @@
                 <tr>
                     <td>exabyte</td>
                     <td>EB</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>EB</td>
                     <td>=</td>
@@ -249,10 +208,6 @@
                 <tr>
                     <td>exbibyte</td>
                     <td>EiB</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>EiB</td>
                     <td>=</td>
@@ -261,10 +216,6 @@
                 <tr>
                     <td>zettabyte</td>
                     <td>ZB</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>ZB</td>
                     <td>=</td>
@@ -273,10 +224,6 @@
                 <tr>
                     <td>zebibyte</td>
                     <td>ZiB</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>ZiB</td>
                     <td>=</td>
@@ -285,10 +232,6 @@
                 <tr>
                     <td>yottabyte</td>
                     <td>YB</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>YB</td>
                     <td>=</td>
@@ -297,10 +240,6 @@
                 <tr>
                     <td>yobibyte</td>
                     <td>YiB</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>1</td>
                     <td>YiB</td>
                     <td>=</td>
