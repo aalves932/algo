@@ -2,45 +2,37 @@
 
 <h3>Calculadora de Bytes</h3>
 
-
-
 <div class="form-group row mt-4 pt-3 pb-5 rounded bg-gradient-calc itens-center">
     <h5 class="mt-4">Conversão de medidas informáticas</h5>
 
-    <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
-        <div><label for="inputValue1">bit (B)</label></div>
-        <input @bind="bitValue" type="number" name="inputValue1" class="form-control input-lg text-center"
-            placeholder="bit">
-    </div>
+    <div class="row">
+        <div class="col-6">
 
-    <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
-        <div><label for="inputValue2">byte (B)</label></div>
-        <input @bind="byteValue" type="number" name="inputValue2" class="form-control input-lg text-center"
-            placeholder="byte">
-    </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-3 col-sm-4 col-4 mt-3 text-center">
+                    <label class="form-label">Valor</label>
+                    <input @bind="inputValue" type="number" class="form-control input-lg text-center">
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-4 col-4 mt-3 text-center">
+                    <label class="form-label">Unidade</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Escolha a unidade</option>
+                        <option value="1">bits</option>
+                        <option value="2">bytes</option>
+                        <option value="3">kilobytes</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <p class="mt-4">Resultado</p>
+            <p class="mt-4 p-0 m-0">1 byte = 8 bits</p>
+            <p class="mt-4 m-0 p-0">1 byte = 8 bits</p>
+            <p class="mt-4">1 byte = 8 bits</p>
+            <p class="mt-4">1 byte = 8 bits</p>
+            <p class="mt-4">1 byte = 8 bits</p>
+        </div>
 
-    <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
-        <div><label for="inputValue3">kilobyte (KB)</label></div>
-        <input @bind="kilobyteValue" type="number" name="inputValue3" class="form-control input-lg text-center"
-            placeholder="KB">
-    </div>
-
-    <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
-        <div><label for="inputValue4">megabyte (MB)</label></div>
-        <input @bind="megabyteValue" type="number" name="inputValue4" class="form-control input-lg text-center"
-            placeholder="MB">
-    </div>
-
-    <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
-        <div><label for="inputValue5">gigabyte (GB)</label></div>
-        <input @bind="gigabyteValue" type="number" name="inputValue5" class="form-control input-lg text-center"
-            placeholder="GB">
-    </div>
-
-    <div class="col-lg-2 col-md-3 col-sm-4 mt-3 text-center">
-        <div><label for="inputValue6">terabyte (TB)</label></div>
-        <input @bind="terabyteValue" type="number" name="inputValue6" class="form-control input-lg text-center"
-            placeholder="TB">
     </div>
 
     <div class="row">
@@ -49,8 +41,6 @@
         </div>
     </div>
 </div>
-
-
 
 <div class="container-fluid mt-4 m-auto w-auto">
     <h5>Quantos megabytes (MB) é um gigabyte (GB)? E um terabyte (TB)?</h5>
@@ -264,19 +254,11 @@
 
 
 @code {
-    public double bitValue = 0;
-    public double byteValue = 0;
-    public double kilobyteValue = 0;
-    public double megabyteValue = 0;
-    public double gigabyteValue = 0;
-    public double terabyteValue = 0;
+    public double inputValue = 0;
 
-    public void calculate()
+
+    private void calculate()
     {
-        bitValue = byteValue * 8;
-        kilobyteValue = byteValue / 1024;
-        megabyteValue = kilobyteValue / 1024;
-        gigabyteValue = megabyteValue / 1024;
-        terabyteValue = gigabyteValue / 1024;
+        inputValue = 1;
     }
 }
