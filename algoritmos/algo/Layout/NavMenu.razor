@@ -7,9 +7,9 @@
     </div>
 </div>
 
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+<div class="@NavMenuCssClass nav-scrollable">
     <nav class="flex-column">
-        <div class="nav-item px-3"> <!-- home -->
+        <div class="nav-item px-3" @onclick="ToggleNavMenu"> <!-- home -->
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
                 <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
             </NavLink>
@@ -25,7 +25,7 @@
                 </svg> Blazor Template
             </a>
             <div class="@FinanceiroMenuCssClass">
-                <nav class="nav flex-column ms-3">
+                <nav class="nav flex-column ms-3" @onclick="ToggleNavMenu">
                     <NavLink class="nav-link" href="counter">  <!-- contador -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-arrow-return-right" viewBox="0 0 16 16">
@@ -48,7 +48,7 @@
         </div>
 
 
-        <div class="nav-item px-3">  <!-- habilitacao -->
+        <div class="nav-item px-3" @onclick="ToggleNavMenu">  <!-- habilitacao -->
             <NavLink class="nav-link" href="habilitacao">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-credit-card-2-front" viewBox="0 0 16 16">
@@ -60,7 +60,7 @@
             </NavLink>
         </div>
 
-        <div class="nav-item px-3">  <!-- byte_calc -->
+        <div class="nav-item px-3" @onclick="ToggleNavMenu">  <!-- byte_calc -->
             <NavLink class="nav-link" href="byte_calc">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-calculator" viewBox="0 0 16 16">
