@@ -585,24 +585,20 @@ video {
   margin-top: 1.25rem;
 }
 
+.me-2 {
+  margin-inline-end: 0.5rem;
+}
+
 .table {
   display: table;
-}
-
-.w-auto {
-  width: auto;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .w-4\/5 {
   width: 80%;
 }
 
-.max-w-md {
-  max-width: 28rem;
+.w-auto {
+  width: auto;
 }
 
 .rounded {
@@ -611,10 +607,6 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
-}
-
-.rounded-md {
-  border-radius: 0.375rem;
 }
 
 .rounded-lg {
@@ -658,16 +650,6 @@ video {
   padding-right: 1rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -685,8 +667,17 @@ video {
   padding-top: 0.75rem;
 }
 
+.pe-3 {
+  padding-inline-end: 0.75rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-base {
@@ -697,11 +688,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -718,19 +704,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.underline {
-  text-decoration-line: underline;
-}
-
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-md {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -783,40 +759,4 @@ video {
 .active\:bg-indigo-600:active {
   --tw-bg-opacity: 1;
   background-color: rgb(79 70 229 / var(--tw-bg-opacity));
-}
-
-@media (min-width: 640px) {
-  .sm\:max-w-xl {
-    max-width: 36rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:w-1\/2 {
-    width: 50%;
-  }
-
-  .lg\:max-w-full {
-    max-width: 100%;
-  }
-
-  .lg\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  .lg\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:ml-auto {
-    margin-left: auto;
-  }
-
-  .xl\:max-w-lg {
-    max-width: 32rem;
-  }
 }
