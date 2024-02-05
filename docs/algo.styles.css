@@ -152,6 +152,7 @@ main[b-sr3xlv5fct] {
     .collapse[b-ptaxnl73o3] {
         /* Never collapse the sidebar for wide screens */
         display: block;
+        visibility: visible;
     }
     
     .nav-scrollable[b-ptaxnl73o3] {
