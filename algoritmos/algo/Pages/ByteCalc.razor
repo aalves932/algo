@@ -1,12 +1,13 @@
 ﻿@page "/byte_calc"
 
-<h3>Calculadora de Bytes</h3>
+<h3 class="text-3xl font-bold">Calculadora de Bytes</h3>
+
 
 <div class="form-group row mt-4 pt-3 pb-5 rounded bg-gradient-calc itens-center">
     <h5 class="mt-4">Conversão de medidas informáticas</h5>
 
     <div class="row">
-        <div class="col-12 col-sm-6 col-md-6">
+        <div class="col-12">
             <div class="row">
                 <div class="col-6 col-sm-4 col-md-4 col-lg-4  mt-3 text-center">
                     <label class="form-label">Valor</label>
@@ -14,31 +15,40 @@
                 </div>
                 <div class="col-6 col-sm-8 col-md-6 mt-3 text-center">
                     <label class="form-label">Unidade</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select @bind="inputUnit" class="form-select" aria-label="Default select example">
                         <option selected>Escolha a unidade</option>
                         <option value="1">bits</option>
                         <option value="2">bytes</option>
                         <option value="3">kilobytes</option>
+                        <option value="4">megabytes</option>
+                        <option value="5">gigabytes</option>
                     </select>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-6">
-            <p class="mt-4">Resultado</p>
-            <p class="mt-4 p-0 m-0">1 byte = 8 bits</p>
-            <p class="mt-4 m-0 p-0">1 byte = 8 bits</p>
-            <p class="mt-4">1 byte = 8 bits</p>
-            <p class="mt-4">1 byte = 8 bits</p>
-            <p class="mt-4">1 Terabyte = 1024 gigabytes (GB)</p>
+
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-4 mt-5 text-center">
+                <button class="btn btn-primary m-auto" @onclick="calculate">Calcular</button>
+            </div>
         </div>
+
+        @if (bits != 0){
+
+            <div class="col-12 col-sm-6 col-md-6">
+                <p class="mt-4">Resultado</p>
+                <p class="mt-4 p-0 m-0">@inputValue bits = @bits bits</p>
+                <p class="mt-4 p-0 m-0">@inputValue bytes = @bytes bytes</p>
+                <p class="mt-4 p-0 m-0">@inputValue kBytes= @kilobytes kilobytes</p>
+                <p class="mt-4 p-0 m-0">@inputValue Mbytes = @megabytes megabytes</p>
+                <p class="mt-4 p-0 m-0">@inputValue Gbytes= @gigabytes gigabytes</p>
+                <p class="mt-4 p-0 m-0">@inputValue Terabytes= @terabytes terabytes</p>
+            </div>
+        }
+
 
     </div>
 
-    <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-4 mt-5 text-center">
-            <button class="btn btn-primary m-auto" @onclick="calculate">Calcular</button>
-        </div>
-    </div>
 </div>
 
 <div class="container-fluid mt-4 m-auto w-auto">
@@ -253,10 +263,85 @@
 
 
 @code {
-    public double inputValue = 0;
+    public double inputValue = 0,
+    bits = 0,
+    bytes = 0,
+    kilobytes = 0,
+    megabytes = 0,
+    gigabytes = 0,
+    terabytes = 0;
+    public int inputUnit = 0;
 
     private void calculate()
     {
-        inputValue = 1;
+        ConversorDeUnidadeDeArmazenamento conversor = new ConversorDeUnidadeDeArmazenamento(inputValue, inputUnit);
+        bits = conversor.ParaBits();
+        bytes = conversor.ParaBytes();
+        kilobytes = conversor.ParaKilobytes();
+        megabytes = conversor.ParaMegabytes();
+        gigabytes = conversor.ParaGigabytes();
+        terabytes = conversor.ParaTerabytes();
     }
+
+    public class ConversorDeUnidadeDeArmazenamento
+    {
+        private double valorInicial;
+        private int unidadeInicial;
+
+        public ConversorDeUnidadeDeArmazenamento(double valor, int unidade)
+        {
+            valorInicial = valor;
+            unidadeInicial = unidade;
+        }
+
+        private double ConverterParaBits()
+        {
+            switch (unidadeInicial)
+            {
+                case 1: // Bits
+                    return valorInicial;
+                case 2: // Bytes
+                    return valorInicial * 8; // 1 byte = 8 bits
+                case 3: // Kilobytes
+                    return valorInicial * 8 * 1024; // 1 KB = 8 * 1024 bits
+                case 4: // Megabytes
+                    return valorInicial * 8 * 1024 * 1024; // 1 MB = 8 * 1024 * 1024 bits
+                case 5: // Gigabytes
+                    return valorInicial * 8 * 1024 * 1024 * 1024; // 1 GB = 8 * 1024 * 1024 * 1024 bits
+                default:
+                    throw new ArgumentException("Unidade de entrada inválida.");
+            }
+        }
+
+        public double ParaBits()
+        {
+            return ConverterParaBits();
+        }
+
+        public double ParaBytes()
+        {
+            return ConverterParaBits() / 8;
+        }
+
+        public double ParaKilobytes()
+        {
+            return ConverterParaBits() / 8 / 1024;
+        }
+
+        public double ParaMegabytes()
+        {
+            return ConverterParaBits() / 8 / 1024 / 1024;
+        }
+
+        public double ParaGigabytes()
+        {
+            return ConverterParaBits() / 8 / 1024 / 1024 / 1024;
+        }
+
+        public double ParaTerabytes()
+        {
+            return ConverterParaBits() / 8 / 1024 / 1024 / 1024 / 1024;
+        }
+    }
+
 }
