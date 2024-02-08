@@ -1,0 +1,11 @@
+﻿@page "/code"
+
+@page "/exemplo-html"
+
+<h3>Renderizar HTML a partir de uma String</h3>
+
+@((MarkupString)htmlContent)
+
+@code {
+    private string htmlContent = "<p>Este é um <strong>texto em negrito</strong>!</p>";
+}
