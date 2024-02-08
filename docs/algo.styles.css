@@ -40,6 +40,8 @@ main[b-sr3xlv5fct] {
 @media (max-width: 640.98px) {
     .top-row[b-sr3xlv5fct] {
         justify-content: space-between;
+        visibility: hidden;
+        height: unset;
     }
 
     .top-row[b-sr3xlv5fct]  a, .top-row[b-sr3xlv5fct]  .btn-link {
