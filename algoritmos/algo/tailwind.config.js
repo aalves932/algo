@@ -6,7 +6,7 @@ module.exports = {
     "./wwroot/**/*.{razor,html,cshtml}"
   ],
   theme: {
-    extend: {},
+    extend: { },
   },
   plugins: [],
 }
