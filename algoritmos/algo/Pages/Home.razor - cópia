@@ -1,0 +1,74 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<div class="max-w-4xl mx-auto">
+
+    <h3 class="text-2xl font-bold">Bem-vindo ao início da sua Jornada em Programação!</h3>
+
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2">
+            <div>
+                <h2 class="mt-3 ss-H2-text">Onde tudo começa</h2>
+                <div class="mt-3 justify-text">
+                    A jornada no mundo da programação é cheia de descobertas e desafios. Tradicionalmente,
+                    nossos primeiros passos neste universo envolvem a resolução de exercícios de lógica diretamente no terminal, um
+                    ambiente puramente textual que, apesar de poderoso, muitas vezes não captura a imaginação de quem está
+                    começando.
+                </div>
+                <h2 class="mt-3 ss-H2-text">Uma nova perspectiva</h2>
+                <div class="mt-3 justify-text">
+                    Pensando em trazer uma experiência mais visual e interativa para este aprendizado,
+                    propomos uma abordagem diferente: e se pudéssemos levar esses algoritmos iniciais para além do terminal,
+                    transformando-os em aplicativos web interativos? É aqui que nossa aventura começa.
+                </div>
+            </div>
+            <div class="py-4 flex flex-col mx-auto max-w-3xl w-4/5 justify-center">
+                <img class="rounded-lg shadow-lg" src="robo_boy.png" alt="Robo boy" />
+            </div>
+        </div>
+
+
+
+    <div class="mt-3 justify-text">Utilizando o Blazor, a moderna framework da Microsoft para construção de interfaces
+        web com C#, queremos mostrar que é possível, sim, aprender lógica de programação de uma maneira divertida e
+        criativa. Blazor nos permite escrever código .NET que é executado no navegador, abrindo um leque de
+        possibilidades para visualizar e interagir com os algoritmos que estamos aprendendo.
+    </div>
+
+
+     <div class="py-4 flex flex-col mx-auto max-w-3xl w-4/5 justify-center">    
+    <img class="rounded-lg shadow-lg" src="./assets/img/bots-exploring.webp" alt="Algoritmos" />
+    </div
+    
+    <h2 class="mt-3 ss-H2-text">O que você encontrará aqui</h2>
+    
+
+    <div class="mt-3 justify-text">
+        Neste site, cada item do menu representa um desafio de programação, desde os mais
+        básicos até aqueles que vão testar suas habilidades recém-adquiridas. Mas, em vez de simplesmente digitar seu
+        código em um editor e executá-lo no terminal, você terá a chance de ver seus algoritmos ganharem vida em uma
+        página web, interagindo com eles de maneira visual e intuitiva.
+    </div>
+
+    <h2 class="mt-3 ss-H2-text">Para Nossos Alunos</h2>
+
+    <div class="mt-3 justify-text">
+        Acreditamos que a programação deve ser acessível e estimulante. Ao trazer esses
+        exercícios para o contexto de uma aplicação web, esperamos não só facilitar o entendimento dos conceitos
+        fundamentais da programação mas também inspirar você a explorar as inúmeras possibilidades que o desenvolvimento
+        web oferece.
+    </div>
+
+    <div class="mt-3 justify-text">Prepare-se para mergulhar em uma experiência de aprendizado única, onde o código que
+        você escreve não apenas resolve problemas lógicos mas também cria algo tangível e interativo no vasto universo
+        da web.
+    </div>
+
+    <h2 class="mt-3 ss-H2-text">Vamos Começar?</h2>
+
+    <div class="mt-3 justify-text">Explore, aprenda e, acima de tudo, divirta-se. Este é apenas o começo da sua jornada
+        em programação, e estamos aqui para garantir que seja uma aventura memorável. Bem-vindo ao futuro da
+        aprendizagem em programação com Blazor!
+    </div>
+
+</div>
