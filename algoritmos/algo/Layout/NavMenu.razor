@@ -1,8 +1,7 @@
 ﻿@inject IJSRuntime JSRuntime
 
-<div class="top-row ps-3 bg-slate-600 dark:bg-gray-900 text-stone-300 dark:text-stone-100 navbar">
+<div class="top-row ps-3 bg-slate-900 dark:bg-black text-stone-300 dark:text-stone-100 navbar">
     <div class="container-fluid">
-
         <div>
             <button @onclick="ToggleDarkMode" class="rounded-full">
                 @if (isDarkMode){
@@ -26,7 +25,7 @@
     </div>
 </div>
 
-<div class="@NavMenuCssClass nav-scrollable bg-slate-600 dark:bg-gray-900">
+<div class="@NavMenuCssClass nav-scrollable bg-slate-900 dark:bg-black">
     <nav class="flex-column">
         <div class="nav-item px-3" @onclick="ToggleNavMenu"> <!-- home -->
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
