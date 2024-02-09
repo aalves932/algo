@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
     
     <head>
         <meta charset="utf-8" />
@@ -13,7 +13,7 @@
     <link href="algo.styles.css" rel="stylesheet" />
 </head>
 
-<body class="bg-gray-200">
+<body class="bg-[#171717] dark:bg-[#171717] text-stone-800 dark:text-stone-100">
     <div id="app">
         <svg class="loading-progress">
             <circle r="40%" cx="50%" cy="50%" />
@@ -28,6 +28,11 @@
         <a class="dismiss">🗙</a>
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
+    <script>
+        function toggleDarkMode() {
+          document.documentElement.classList.toggle('dark');
+        }
+      </script>
 </body>
 
 </html>

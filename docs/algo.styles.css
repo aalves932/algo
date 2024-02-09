@@ -14,8 +14,8 @@ main[b-sr3xlv5fct] {
 }
 
 .top-row[b-sr3xlv5fct] {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
+    /* background-color: #f7f7f7; */
+    /* border-bottom: 1px solid #d6d5d5; */
     justify-content: flex-end;
     height: 3.5rem;
     display: flex;
@@ -81,11 +81,12 @@ main[b-sr3xlv5fct] {
 /* /Layout/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-ptaxnl73o3] {
     background-color: rgba(255, 255, 255, 0.1);
+    color: white;
 }
 
 .top-row[b-ptaxnl73o3] {
     height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+    /* background-color: rgba(0,0,0,0.4); */
 }
 
 .navbar-brand[b-ptaxnl73o3] {
@@ -149,7 +150,7 @@ main[b-sr3xlv5fct] {
 
 @media (min-width: 641px) {
     .navbar-toggler[b-ptaxnl73o3] {
-        display: none;
+        display: block;
     }
 
     .collapse[b-ptaxnl73o3] {
