@@ -7,8 +7,15 @@
         background-image: linear-gradient(180deg,  #07042e 0%, #130f58 70%);
         color: aliceblue;
     }
-    
+
+    /* TIPOGRAFIA */
     .justify-text{
         text-align: justify;
     }
+
+    .ss-H2-text{
+        @apply text-lg text-blue-700 dark:text-cyan-400;
+    }
 }
+
+
