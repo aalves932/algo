@@ -72,6 +72,13 @@
         display: block;
     }
 
+    .nav-hamburger {
+        display: none;
+        visibility: visible;
+        margin-right: 1.5rem;
+    }
+    
+
     .collapse {
         /* Never collapse the sidebar for wide screens */
         display: block;

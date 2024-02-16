@@ -153,6 +153,13 @@ main[b-sr3xlv5fct] {
         display: block;
     }
 
+    .nav-hamburger[b-ptaxnl73o3] {
+        display: none;
+        visibility: visible;
+        margin-right: 1.5rem;
+    }
+    
+
     .collapse[b-ptaxnl73o3] {
         /* Never collapse the sidebar for wide screens */
         display: block;
