@@ -12,7 +12,7 @@
     "watch": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "http://192.168.5.29:3000",
+      "applicationUrl": "http://192.168.5.35:3000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
