@@ -48,7 +48,7 @@
         </div>
 
         <div class="nav-item px-3"> <!-- Design -->
-    
+
             <a class="nav-link " role="button" @onclick="(e) => ToggleSubMenu(e, 2)">
                 <span class="bi material-symbols-outlined">code_blocks</span>
                 Design
@@ -56,30 +56,31 @@
             </a>
 
             @* <div class="@DesignMenuCssClass"> *@
-                <nav class="@DesignMenuCssClass nav flex-column ms-3" @onclick="ToggleNavMenu">
-                    <NavLink class="nav-link " href="tailwind"> <!-- tailwind tips -->
-                        <span class="bi bi-tailwind-nav-menu" aria-hidden="true"></span>
-                        Tailwind Tips
-                    </NavLink>
+            <nav class="@DesignMenuCssClass nav flex-column ms-3" @onclick="ToggleNavMenu">
+                <NavLink class="nav-link " href="tailwind"> <!-- tailwind tips -->
+                    <span class="bi bi-tailwind-nav-menu" aria-hidden="true"></span>
+                    Tailwind Tips
+                </NavLink>
 
-                    <NavLink class="nav-link" href="counter"> <!-- contador -->
-                        <span class="bi material-symbols-outlined">add_circle</span>
-                        Contador
-                    </NavLink>
+                <NavLink class="nav-link" href="counter"> <!-- contador -->
+                    <span class="bi material-symbols-outlined">add_circle</span>
+                    Contador
+                </NavLink>
 
-                    <NavLink class="nav-link" href="weather"> <!-- Clima -->
-                        Tempo
-                    </NavLink>
-                </nav>
+                <NavLink class="nav-link" href="weather"> <!-- Clima -->
+                    Tempo
+                </NavLink>
+            </nav>
             @* </div> *@
         </div>
 
         <div class="nav-item px-3" @onclick="ToggleNavMenu"> <!-- habilitacao -->
-            <NavLink class="nav-link" href="habilitacao">
-                <span class="bi material-symbols-outlined">confirmation_number</span>
-                Habilitação
+            <NavLink class="nav-link" href="photogrid">
+                <span class="bi material-symbols-outlined">perm_media</span>
+                Grade de Fotos
             </NavLink>
         </div>
+
 
         <div class="nav-item px-3" @onclick="ToggleNavMenu"> <!-- byte_calc -->
             <NavLink class="nav-link" href="byte_calc">
@@ -94,6 +95,14 @@
                 DDD
             </NavLink>
         </div>
+
+        <div class="nav-item px-3" @onclick="ToggleNavMenu"> <!-- habilitacao -->
+            <NavLink class="nav-link" href="habilitacao">
+                <span class="bi material-symbols-outlined">confirmation_number</span>
+                Habilitação
+            </NavLink>
+        </div>
+
 
     </nav>
 </div>
