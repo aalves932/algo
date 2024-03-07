@@ -1,4 +1,5 @@
-dotnet publish
+dotnet publish -c Release
+
 touch ./docs/.nojekyll
 cp -Rf ./algoritmos/algo/bin/Release/net8.0/publish/wwwroot/ ./docs/
 
